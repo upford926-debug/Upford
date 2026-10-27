@@ -1,1 +1,463 @@
-upford.net
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPSC | Saint Peter's School Complex</title>
+  <link rel="stylesheet" href="sch.css">
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #203044;
+  line-height: 1.6;
+}
+
+.header{
+  background: #102b46;
+  color: white;
+  padding: 18px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.head{
+  display:flex;
+}
+
+img{
+  width:10%;
+  height:12%;
+  border-radius:30px;
+  box-shadow:1px 3px 5px black;
+}
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #f0c66e;
+}
+
+nav {
+  display: flex;
+  gap: 22px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #f0c66e;
+}
+
+#menuBtn {
+  display: none;
+  color: white;
+  background: none;
+  border: none;
+  font-size: 25px;
+}
+
+.hero {
+  min-height: 480px;
+  padding: 90px 8%;
+  display: flex;
+  align-items: center;
+  color: white;
+  background:
+    linear-gradient(90deg, #102b46ee, #102b4666),
+    url("/images/Screenshot_20261024-143314.png")
+    center/cover;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.tagline {
+  color: #f0c66e;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 7vw, 65px);
+  line-height: 1.15;
+  margin-bottom: 15px;
+}
+
+.hero h1 span {
+  color: #f0c66e;
+}
+
+.hero p {
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  background: #e7b34c;
+  color: #102b46;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #ffd47a;
+}
+
+.section {
+  padding: 65px 8%;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #102b46;
+}
+
+.section > p {
+  max-width: 800px;
+  margin: 10px auto;
+}
+
+.light {
+  background: #f2f5f8;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px #102b4612;
+  text-align: left;
+}
+
+.card h3 {
+  color: #174e78;
+  margin-bottom: 10px;
+}
+
+form {
+  max-width: 550px;
+  margin: 25px auto 0;
+  display: grid;
+  gap: 14px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ccd5de;
+  border-radius: 6px;
+  font: inherit;
+}
+
+textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+footer {
+  background: #102b46;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+footer a {
+  display: inline-block;
+  color: #f0c66e;
+  margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-wrap: wrap;
+  }
+
+  #menuBtn {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+    padding-top: 15px;
+  }
+
+  nav.open {
+    display: flex;
+  }
+
+  nav a {
+    padding: 10px 0;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: 420px;
+    padding: 65px 7%;
+  }
+
+  .section {
+    padding: 50px 7%;
+  }
+}
+
+ .tel{
+    color:green;
+  margin:20px;
+  background:linear-gradient(to left top,lightgreen,white,lightgreen);
+  padding:10px;
+  text-decoration:none;
+  font-weight:bold;
+  font-size:20px;
+  box-shadow:7px 5px 3px white;
+  border-radius:20px;
+ }
+ 
+ .mail{
+  color:blue;
+  margin:20px;
+  background:linear-gradient(to left top, lightblue, white, lightblue);
+  padding:10px;
+  text-decoration:none;
+  font-weight:bold;
+  font-size:20px;
+  box-shadow:7px 5px 3px white;
+  border-radius:20px;
+
+   
+ }
+ 
+ center{
+   color: black ;
+   font-weight:bold;
+ }
+ 
+.class{
+  display:flex;
+  justify-content: center;
+  
+}
+
+.mission{
+  background: Red;
+  margin:60px;
+}
+
+.vision{
+  background: Green ;
+margin:60px;
+}
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <header class="head">
+   <img src="/images/Screenshot_20260908_102005_ChatGPT.jpg">
+    <div class="logo">
+
+      Saint Peter's</div>
+    </header>
+    <button id="menuBtn" aria-label="Toggle navigation">☰</button>
+    <nav id="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#academics">Academics</a>
+      <a href="#life">School Life</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="tagline">LEARN • LEAD • SERVE</p>
+      <h1>Welcome to <span>Saint Peter's School Complex</span></h1>
+      <p>Building knowledge. Shaping tomorrow.</p>
+      <a href="#about" class="btn">Discover Our School</a>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Our School</h2>
+    <p>
+      Welcome to Saint Peter's School Complex,
+      Abrem Agona, Central region of Ghana. This website is a place to share
+      school information, academic activities and announcements.
+    </p>
+    <p>
+      Saint Peter's School Complex is a private school which was established in the year 2016
+    </p>
+    <p>Replace this text with the school's approved history,
+      mission and vision.</p>
+    
+    <main class="class">
+      <h5 class="mission">
+        <h4>
+        The Mission of the School
+        </h4>
+        <h6>
+          
+        </h6>
+      </h5>
+      
+      <h5 class="vision">
+        <h4>
+        The Vision of the School
+        </h4>
+       <h6>
+         To be a leading private school in Abrem State, Recognized for nurturing confident, compassionate, and innovate learners who excel academically, embrace diversity and are prepared to thrive in a rapidly changing the World 🌎 
+       </h6> 
+      </h5>
+    </main>
+  </section>
+
+  <section id="academics" class="section light">
+    <h2>Our Academics</h2>
+    <div class="cards">
+      <article class="card">
+        <h3>Core Subjects</h3>
+        <p>Information about core subjects and learning resources.</p>
+      </article>
+      <article class="card">
+        <h3>Elective Subjects</h3>
+        <p>Information about elective programmes and departments.</p>
+      </article>
+      <article class="card">
+        <h3>Learning Resources</h3>
+        <p>Study materials, revision activities and useful links.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="life" class="section">
+    <h2>School Life</h2>
+    <div class="cards">
+      <article class="card">
+        <h3>Arts and Creativity</h3>
+        <p>Celebrating student creativity and talent.</p>
+      </article>
+      <article class="card">
+        <h3>Sports</h3>
+        <p>Encouraging teamwork and healthy competition.</p>
+      </article>
+      <article class="card">
+        <h3>Clubs and Activities</h3>
+        <p>Developing leadership and community spirit.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="news" class="section light">
+    <h2>News & Announcements</h2>
+    <div class="card">
+      <h3>School Announcements</h3>
+      <p>Official school news and upcoming events will appear here.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Location: Abrem Agona, Ghana</p>
+    <p>Add the school's verified official email and telephone number.</p>
+
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your name" required>
+      <input type="email" id="email" placeholder="Your email" required>
+      <textarea id="message" placeholder="Your message" required></textarea>
+      <button type="submit" class="btn">Preview Message</button>
+      <p id="feedback"></p>
+    </form>
+    <center>
+    <p>Or</p>
+    </center>
+    
+    <p>For more information call 🤙 or email us</p>
+    
+    <a class="tel" href="tel:+233203245596">📞 Call us</a>  
+  
+    <a class="mail" href="mailto:therock123@gmail.com">📧 Mail us</a
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> SPSC. School website concept.</p>
+    <a href="#home">Back to Top ↑</a>
+  </footer>
+
+  <script src="schl.js">
+    
+    const menuBtn = document.getElementById("menuBtn");
+const nav = document.getElementById("nav");
+
+menuBtn.addEventListener("click", function () {
+  nav.classList.toggle("open");
+});
+
+nav.querySelectorAll("a").forEach(function (link) {
+  link.addEventListener("click", function () {
+    nav.classList.remove("open");
+  });
+});
+
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+
+document.getElementById("contactForm").addEventListener(
+  "submit",
+  function (event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (!name || !email || !message) {
+      document.getElementById("feedback").textContent =
+        "Please complete all fields.";
+      return;
+    }
+
+    document.getElementById("feedback").textContent =
+      "Demo only: your message has not been sent. A backend is needed to send messages.";
+  }
+);
+
+  </script>
+</body>
+</html>
